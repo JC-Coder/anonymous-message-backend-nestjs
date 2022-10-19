@@ -9,11 +9,7 @@ import { AuthModule } from './auth/auth.module';
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host:  process.env.PGHOST || 'localhost',
-      port: +process.env.PGPORT || 5432,
-      username: process.env.PGUSER || 'postgres',
-      password:  process.env.PGPASSWORD || 'root',
-      database: process.env.PGDATABASE || 'Annonymous Message Application',
+      url: process.env.DATABASE_URL || 'postgres://postgres:root@localhost:5432/anon_message_app',
       autoLoadEntities: true,
       synchronize: true,
       dropSchema: false
