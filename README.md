@@ -1,101 +1,96 @@
-# NestJS + Mongoose + MongoDB Starter Template
+<div id="top"></div>
 
-This is a template for a simple To Do List web app that consists of a REST API and a simple front end UI.
+<div align="center">
+  <h2>AnonymousMe</h2>
+  <p>An app to help you get anonymous feedbacks from your friends, coworkers and fans</p>
 
-<p align="center"><img src="screenshot.png" width="90%" /></p>
+  <p  align="center">
+    <a href="https://anonymousme.netlify.app/">View Demo</a>
+  </p>
 
-The app uses [NextJS](https://nextjs.com) as the foundation that provides the REST API back end and also serves the static front end.
-[Mongoose](https://mongoosejs.com) is used to define the data model and interfaces to the [MongoDB](https://mongodb.com) database.
+  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/JC-Coder/anonymous-message-backend-nestjs">
+  <img alt="contributors" src="https://img.shields.io/github/contributors/JC-Coder/anonymous-message-backend-nestjs">
+  <img alt="GitHub Repo forks" src="https://img.shields.io/github/forks/JC-Coder/anonymous-message-backend-nestjs">
+  <img alt="issues" src="https://img.shields.io/github/issues/JC-Coder/anonymous-message-backend-nestjs"> </br>
 
-## Using this Starter Template
+</div>
 
-This repo can be used as an [Adaptable.io](https://adaptable.io) Starter.
-For instructions on using this repo as a template and deploying to the Adaptable Cloud in just a few clicks, check out the [Starter Guide](https://adaptable.io/docs/starters/nestjs-mongo-starter).
+## Anonymous Me
 
-## Running a local dev environment
+This app is developed for fun and also to help you improve by getting geniune feedbacks.
 
-All of the following instructions assume you are in the repo root directory.
+### ✨ Built With
 
-### 1. Install Node.js modules
+This project is built with:
+<ul>
+  <li> NODE JS </li>
+  <li> NEST JS </li>
+  <li> TYPESCRIPT </li>
+<ul>
 
-```console
-yarn
+### 🖼️ Screenshot
+![Screenshot from 2022-10-21 13-59-24](https://user-images.githubusercontent.com/99423608/197201909-f5f4a433-c7ea-448a-a992-7fb6bb9a2af9.png)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## 📚 Getting Started
+
+To get a local copy up and running follow these simple steps.
+
+### Prequisite 
+You need the frontend of this application . Get it [Here](https://github.com/JC-Coder/anonymous-message-frontend)
+
+### 🛠️ Installation
+
+1. [Fork](https://github.com/JC-Coder/anonymous-message-frontend/fork) the project. Click on the fork icon in the top right to get started
+2. Clone the project, you can use the following command:
+
+   ```bash
+   git clone https://github.com/<your-github-username>/anonymous-message-backend-nestjs
+   ```
+
+3. Navigate to the project directory
+
+   ```bash
+   cd anonymous-message-frontend
+   ```
+
+
+## Installation
+
+```bash
+$ npm install
 ```
 
-### 2. Run MongoDB locally
+## Running the app
 
-The app requires a database to store the data for the REST API.
-You can run a MongoDB cluster on your local development system if you have Docker installed.
+```bash
+# development
+$ npm run start
 
-To run a MongoDB cluster using Docker:
+# watch mode
+$ npm run start:dev
 
-```console
-yarn run mongo-start
+# production mode
+$ npm run start:prod
 ```
 
-To later stop the MongoDB cluster:
+## 🎨 Demo
 
-> **WARNING**: All data stored in the local cluster will be deleted when the container is stopped.
-> For information on persisting the database data, see [the MongoDB Docker README](https://github.com/docker-library/docs/blob/master/mongo/README.md#where-to-store-data).
+Check out the website: [AnonymousMe](https://anonymousme.netlify.app/)
 
-```console
-yarn run mongo-stop
-```
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### 3. Start the app (watch mode)
+## 👩🏽‍💻 Contributing
 
-```console
-yarn run start:dev
-```
+- Contributions make the open source community such an amazing place to learn, inspire, and create.
+- Any contributions you make are greatly appreciated.
 
-> **NOTE**: By default, the app listens on port 3000. To use a different port, set the `PORT` environment variable to the desired port number.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### 4. Connect to your app
 
-Use a web browser to connect to [http://localhost:3000](http://localhost:3000)
+## 🙏🏽 Support
 
-## Running in production
+This project needs a star️ from you. Don't forget to leave a star🌟
 
-### 1. Set DATABASE_URL
-
-The app uses the environment variable `DATABASE_URL` to connect to your MongoDB instance.
-Ensure that `DATABASE_URL` is set to the URL for your MongoDB cluster.
-
-### 2. Build
-
-```console
-yarn run build
-```
-
-### 3. Run
-
-```console
-yarn run start
-```
-
-## Testing
-
-```console
-# unit tests
-yarn run test
-
-# e2e tests
-yarn run test:e2e
-
-# test coverage
-yarn run test:cov
-```
-
-## Source Code
-
-### REST API (back end)
-
-This project follows the NestJS conventions for file and directory structure.
-The implementation of the `/todos` REST API endpoint can be found in `src/todoitems/`.
-
-### Web UI (front end)
-
-The layout and static portions of the front end can be found in `public/index.html`
-The dynamic part of the front end is in `public/js/client.js`.
-
-<p align="center"><a href="https://adaptable.io"><img src="https://adaptable.io/img/color lockup.svg" height="50px" alt="Adaptable.io" /></a></p>
+<p align="right">(<a href="#top">back to top</a>)</p>
